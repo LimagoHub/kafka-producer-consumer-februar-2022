@@ -1,0 +1,10 @@
+{"namespace": "de.model",
+  "type": "record",
+  "name": "Person",
+  "fields": [
+    {"name": "id", "type": "string"},
+    {"name": "firstname",  "type": "string"},
+    {"name": "lastname",  "type": "string"}
+
+  ]
+}
