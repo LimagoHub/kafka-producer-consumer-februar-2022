@@ -31,11 +31,11 @@ public class SimpleKafkaProducer {
     }
 
     private Producer<String, String> createKafkaProducer() {
-        return new KafkaProducer<>(createProperties());
+        return new KafkaProducer<>(createConfigMap());
     }
 
 
-    private Map createProperties () {
+    private Map createConfigMap() {
         return  Map.of(
                 "bootstrap.servers", "localhost:9092",
                 //"schema.registry.url", "http://localhost:8081",
